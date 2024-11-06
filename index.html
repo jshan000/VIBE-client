@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>VIBE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 로딩 화면 -->
+    <div id="loadingScreen">
+        <h1>VIBE</h1>
+    </div>
+
+    <!-- 메인 화면 (외출 시작하기 버튼) -->
+    <div id="mainScreen" style="display:none;">
+        <h1>VIBE</h1>
+        <button id="startButton">외출 시작하기!</button>
+    </div>
+
+    <!-- 주변 소음 인식 화면 -->
+    <div id="noiseScreen" style="display:none;">
+        <button id="backButton">←</button>
+        <div class="microphone-icon">🎤</div>
+        <p>주변 소음 인식 중...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

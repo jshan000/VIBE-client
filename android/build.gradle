@@ -12,6 +12,33 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        classpath("com.android.tools.build:gradle:8.0.2")  // 정확한 버전 지정
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24")
+        classpath("com.google.gms:google-services:4.3.10") // Firebase용 Google Services 추가
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+/* buildscript {
+    ext {
+        buildToolsVersion = "35.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 35
+        targetSdkVersion = 34
+        ndkVersion = "26.1.10909125"
+        kotlinVersion = "1.9.24"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
@@ -19,3 +46,6 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+apply plugin: 'com.google.gms.google-services'
+
+*/

@@ -22,7 +22,6 @@ const SplashScreen = ({ navigation }) => {
   );
 };
 
-
 // 메인 화면 컴포넌트
 const MainScreen = ({ navigation }) => {
   return (
@@ -38,7 +37,6 @@ const MainScreen = ({ navigation }) => {
     </View>
   );
 };
-
 
 // 카테고리 선택 화면 컴포넌트
 const CategoryScreen = () => {
@@ -107,13 +105,13 @@ const styles = StyleSheet.create({
     padding: 20, // 화면 좌우 여백
   },
   title: {
-    fontSize: 42,
+    fontSize: 42, // 메인 화면 타이틀 폰트 크기
     fontWeight: 'bold',
     marginBottom: 20, // 아래 여백
     color: '#333333',
   },
   subtitle: {
-    fontSize: 18,
+    fontSize: 24, // "먼저, 카테고리를 설정해주세요!" 문구의 폰트 크기
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center', // 텍스트 가운데 정렬
@@ -128,7 +126,7 @@ const styles = StyleSheet.create({
   },
   mainButtonText: {
     color: '#FFFFFF', // 버튼 텍스트 색상
-    fontSize: 16,
+    fontSize: 18, // 메인 버튼 텍스트 폰트 크기
     fontWeight: 'bold',
   },
   categoryButton: {
@@ -141,10 +139,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   categoryText: {
-    fontSize: 16,
+    fontSize: 20, // 카테고리 버튼 텍스트 폰트 크기
     color: '#333333',
   },
 });
 
 export default App;
+
 
